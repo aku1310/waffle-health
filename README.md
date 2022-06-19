@@ -1,4 +1,4 @@
-# Breathe: A Serene Adventure
+# Waffle Health
 
 Waffle health gives the user a platform where they can seek help anonymously, get validation for their feelings and take the first step in their healing journey from mental illness. The app will have calming colors, activities, quizzes and resources to calm down or listen to a podcast.
 
