@@ -1,0 +1,194 @@
+@font-face {
+  font-family: DreamingOutLoud;
+  src: url(./fonts/Dreaming_Outloud.otf);
+}
+
+:root {
+  /* VARIABLES */
+
+  --primary-color: #ddbc9b;
+  --secondary-color: #e9ad6a;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBALS */
+
+.App {
+  background-color: var(--primary-color);
+  font-family: DreamingOutLoud;
+}
+
+.page {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background: url(./images/lines_pattern.png);
+  overflow-y: hidden;
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 4rem;
+    
+    .card {
+      display: flex;
+      background-color: var(--secondary-color);
+      width: 20rem;
+      height: 25rem;
+      border-radius: 1rem;
+      flex-direction: column;
+      
+      a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #000000;
+    
+        img {
+          max-height: 20rem;
+          max-width: auto;
+          z-index: 0;
+        }
+      }
+    }
+  }
+}
+
+
+
+.overlay {
+  position: relative;
+  top: -20rem;
+}
+
+.double-overlay {
+  position: relative;
+  top: -40rem;
+}
+
+/* HEADER */
+
+.header {
+  font-size: 1.2rem;
+  width: 100%;
+  position: absolute;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items:flex-end;
+  justify-content:right;
+  padding: 2rem 2rem 2rem 3rem;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color:aliceblue;
+}
+
+// HOMEPAGE
+
+#home-page {
+  background: url(./images/homepage.jpg);
+  background-size: 100vw;
+}
+
+#hid {
+  height: 100vh;
+  width: 100vw;
+  visibility: hidden;
+}
+
+/* ACTIVITIES */
+
+#sage-waffle {
+  animation-name: Levitating-Waffle;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes Levitating-Waffle {
+  0%   {transform: translate(0, 25px);}
+  50%  {transform: translate(0, -25px);}
+  100% {transform: translate(0, 25px);}
+}
+
+#run-waffle {
+  animation-name: Running-Waffle;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes Running-Waffle {
+  0%   {transform: translate(20px, 1px);}
+  50%  {transform: translate(0, 0);}
+  100% {transform: translate(20px, 1px);}
+}
+
+// #med-waffle {
+//   animation-name: Sitting-Waffle;
+//   animation-duration: 5s;
+//   animation-iteration-count: infinite;
+// }
+
+// @keyframes Sitting-Waffle {
+//   0%   {transform: translate(0, 10px);}
+//   50%  {transform: translate(0, -35px);}
+//   100% {transform: translate(0, 10px);}
+// }
+
+/* WISH */
+
+#idea-waffle {
+  animation-name: Vibrating-Waffle;
+  animation-duration: 30ms;
+  animation-iteration-count: infinite;
+  z-index: 100;
+}
+
+@keyframes Vibrating-Waffle {
+  0%   {transform: translate(5px);}
+  50%  {transform: translate(-5px);}
+  100% {transform: translate(5px);}
+}
+
+/* RESOURCES */
+
+#resource-page {
+  overflow-y: hidden;
+}
+
+#dj-waffle {
+  z-index: 0;
+}
+
+#notes {
+  z-index: 10;
+  animation-name: Fading-Waffle;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes Fading-Waffle {
+  0%   {transform: translate(0, 10px); opacity: 1;}
+  90%  {opacity: 0;}
+}
