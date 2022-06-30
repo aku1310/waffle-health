@@ -5,6 +5,7 @@ import {Activities} from './components/Activities';
 import {Quiz} from './components/Quiz';
 import {Header} from './components/Header';
 import { Footer } from './components/Footer';
+import {Feedback} from './components/Feedback';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.scss';
 
@@ -19,6 +20,9 @@ function App() {
           </Route>
           <Route path = "/wish">
             <Wish />
+          </Route>
+          <Route path = "/feedback">
+            <Feedback />
           </Route>
           <Route path = "/activities">
             <Activities/>

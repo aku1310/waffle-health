@@ -10,7 +10,7 @@ export const Header = () => {
                 <li><Link to = '/activities'>activities</Link></li>
                 <li><Link to = '/resources'>resources</Link></li>
                 <li><Link to = '/quiz'>quiz</Link></li>
-                <li><Link to = '#'>feedback</Link></li>
+                <li><Link to = '/feedback'>feedback</Link></li>
             </ul>
         </nav>
     </div> 
